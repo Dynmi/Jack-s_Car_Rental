@@ -12,12 +12,34 @@
 
 ​	To simplify the problem slightly, we assume that there can be no more than 20 cars at each location (any additional cars are returned to the nationwide company, and thus disappear from the problem) and a maximum of five cars can be moved from one location to the other in one night. We take the discount rate to be γ = 0.9 and formulate this as a continuing finite MDP, where the time steps are days, the state is the number of cars at each location at the end of the day, and the actions are the net numbers of cars moved between the two locations overnight. 
 
+——Tip：
 
+本次解法有点问题，导致结果和预期有不同。我觉得问题是在计算reward那一部分，没来得及改。
 
 ——SOLUTION
 
 ​	Policy-Evaluation & Policy-Improvement
 
+![x](D:\Project\car_rental\img\x.PNG)
+
 ——Language
 
 ​	python 3
+
+——package required：
+
+​	numpy
+
+​	matplotlib
+
+——Result
+
+经过五次迭代，
+
+policy结果：
+
+![](D:\Project\car_rental\img\1.png)
+
+value结果：
+
+![](D:\Project\car_rental\img\2.png)
