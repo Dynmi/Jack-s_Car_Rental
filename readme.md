@@ -20,7 +20,7 @@
 
 ​	Policy-Evaluation & Policy-Improvement
 
-![x](D:\Project\car_rental\img\x.PNG)
+![x](https://github.com/Dynmi/Jack-s_Car_Rental/blob/master/img/x.PNG)
 
 ——Language
 
@@ -38,8 +38,8 @@
 
 policy结果：
 
-![](D:\Project\car_rental\img\1.png)
+![](https://github.com/Dynmi/Jack-s_Car_Rental/blob/master/img/1.png)
 
 value结果：
 
-![](D:\Project\car_rental\img\2.png)
+![](https://github.com/Dynmi/Jack-s_Car_Rental/blob/master/img/2.png)
