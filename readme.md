@@ -17,7 +17,7 @@
 本次解法有点问题，导致结果和预期有不同。我觉得问题是在计算reward那一部分，没来得及改。
 
 ——SOLUTION
-
+​	In-place dynamic programming
 ​	Policy-Evaluation & Policy-Improvement
 
 ![image](https://github.com/Dynmi/Jack-s_Car_Rental/blob/master/img/x.PNG)
