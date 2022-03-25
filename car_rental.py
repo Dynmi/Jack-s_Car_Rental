@@ -1,8 +1,6 @@
 '''
 policy iteration for jack's car rental
 
-author@dynmiWang 
-
 '''
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,14 +15,12 @@ Gain_2 = []
 gamma  = 0.9
 
 def get_prob(n, lamda):
-    #获取lamda泊松分布下为n的概率
     res = 1.0 /pow(math.e,lamda) * pow(lamda,n)
     for i in range(1,n):
         res = res / i
     return res
 
 
-# 对于租车点1，计算每个状态下的收获期望
 for x in range(21):
     #早晨x辆车  晚上y辆车
     sum = 0
@@ -37,7 +33,6 @@ for x in range(21):
     Gain_1.append(sum)
 
 
-# 对于租车点2，计算每个状态下的收获期望
 for x in range(21):
     #早晨x辆车  晚上y辆车
     sum = 0
@@ -52,7 +47,6 @@ for x in range(21):
 for i in range(21):
     print(Gain_1[i],Gain_2[i])
 '''
-#S是一个形如[2,3]的数组; a是一个形如(-3,3)的数组
 def init_()->None:
     for s in State:
         for x in range(max(-5,0 - s[0],s[1]-20),min(5,s[1],20 - s[0])+1):
@@ -97,6 +91,5 @@ if __name__ == '__main__':
     for i in range(5):
         policy_evaluation()
         policy_improvement()
-        print("第",i+1,"次迭代：")
         show()
         print('\n')
